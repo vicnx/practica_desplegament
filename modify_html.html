@@ -11,9 +11,14 @@
     <div class="menu">
         <a class="active" href="home.html">Home</a>
         <a class="active" href="modify_html.html">Modificar contenido HTML</a>
-        <a class="active" href="modify_atributo.html">Modificar atributos HTML</a>
       </div>
-    <div id="main">curso nuevo para poder enseñar javascript aplicado a interacciones con elementos HTML</div>
+    <div id="main">
+        <h2>What Can JavaScript Do?</h2>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    </div>
     <div id="footer">Footer</div>
 </body>
 </html>
