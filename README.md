@@ -21,19 +21,19 @@ Define un modelo de ramificación estricto, diseñado alrededor del proyecto. Es
 
 En esta práctica el objetivo es saber utilizar y crear ramas. En esta práctica tendremos 3 usuarios que estan realizando una web. Yo personalmente he utilizado la metodología **Git-Flow**.
 
-## 1. Configuración del terminal.
+## 1 - Configuración del terminal.
 
 Para que aparezca la rama donde me encuentro he configurado el terminal realizando este [Tutorial](https://medium.com/@thucnc/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745)
 
-## 2. Creación y configuración del repositorio con las ramas master y develop. (user1)
+## 2 - Creación y configuración del repositorio con las ramas master y develop. (user1)
 
-### 2.1. Init del repositorio.
+### 2.1 - Init del repositorio.
 
 Realizamos un init del repositorio de GitHub y subimos los cambios a la rama master.
 
 <img src="capturas_practica1/git init.png" alt="git init" with="500" height="auto">
 
-### 2.2. Inicializar el repositorio con git flow.
+### 2.2 - Inicializar el repositorio con git flow.
 
 Seguidamente introducimos el siguiente comando:
 
@@ -57,9 +57,9 @@ git push branch -a
 
 <img src="capturas_practica1/load develop branch.png" alt="push develop" with="500" height="auto">
 
-## 3. Creación de la primera feature (home) por el usuario 1.
+## 3 - Creación de la primera feature (home) por el usuario 1.
 
-### 3.1 Creación de la rama y del html.
+### 3.1 - Creación de la rama y del html.
 
 Primero utilizamos git flow para crear la rama feature/home
 
@@ -75,7 +75,7 @@ Ahora procedemos a crear el home (html y css)
 
 <img src="capturas_practica1/home created status.png" alt="home status" with="500" height="auto">
 
-### 3.2 Subimos la rama home y finalizamos la feature.
+### 3.2 - Subimos la rama home y finalizamos la feature.
 
 ```
 git add .
@@ -115,7 +115,7 @@ git push -u origin develop
 
 <img src="capturas_practica1/git push to develop.png" alt="push develop" with="500" height="auto">
 
-### 3.3 Creacion de la release 1.0.0
+### 3.3 - Creacion de la release 1.0.0
 
 Ahora vamos a crear una release para los cambios. Ya que hemos comprobado que todo funciona bien.
 
@@ -150,9 +150,9 @@ git push
 
 <img src="capturas_practica1/finish release 100 push origin master push.png" alt="finish release 1.0.0" with="500" height="auto">
 
-## 4. Inicialización del usuario 2.
+## 4 - Inicialización del usuario 2.
 
-### 4.1 Clone del repositorio y git flow init
+### 4.1 - Clone del repositorio y git flow init
 
 Realizamos un clone del repositorio y lo inicializamos con git flow
 
@@ -166,7 +166,7 @@ git flow init
 
 <img src="capturas_practica1/git flow init user2.png" alt="flow init 2" with="500" height="auto">
 
-### 4.2 Creación de la feature 2 (contenidoHTML) (user2).
+### 4.2 - Creación de la feature 2 (contenidoHTML) (user2).
 
 ```
 git flow feature start contenidoHTML
@@ -178,7 +178,7 @@ Creamos tambien los archivos necesarios y modificamos el home (creado por el use
 
 <img src="capturas_practica1/feature contenidoHTML.png" alt="feature 2" with="500" height="auto">
 
-### 4.3 Subimos la rama contenidoHTML y finalizamos la feature.
+### 4.3 - Subimos la rama contenidoHTML y finalizamos la feature.
 
 ```
 git add .
@@ -214,7 +214,7 @@ git push -u origin develop
 
 <img src="capturas_practica1/Finish feature contenidoHTML y push to develop.png" alt="Finish feature contenidoHTML y push to develop" with="500" height="auto">
 
-### 4.4 Creación de la feature 3 (atributosHTML) (user2).
+### 4.4 - Creación de la feature 3 (atributosHTML) (user2).
 
 ```
 git flow feature start atributosHTML
@@ -250,7 +250,7 @@ Ahora finalizamos la feature
 
 <img src="capturas_practica1/mergesubido atributosHTML a develop .png" alt="mergesubido atributosHTML a develop " with="500" height="auto">
 
-### 4.6 Creacion de la release 2.0.0 (con las dos features del usuario 2)
+### 4.6 - Creacion de la release 2.0.0 (con las dos features del usuario 2)
 
 ```
 git flow release start 2.0.0
@@ -279,9 +279,9 @@ git push -u origin master
 
 <img src="capturas_practica1/push to master 2.0.0.png" alt="push to master 2.0.0" with="500" height="auto">
 
-## 5. Inicialización del usuario 3.
+## 5 - Inicialización del usuario 3.
 
-### 5.1 Clone del repositorio y git flow init
+### 5.1 - Clone del repositorio y git flow init
 
 Realizamos un clone del repositorio y lo inicializamos con git flow
 
@@ -395,7 +395,7 @@ git flow hotfix start mejoraV3.0.1
 ```
 <img src="capturas_practica1/Creado hotfix.png" alt="Creado hotfix" with="500" height="auto">
 
-### 6.2 Realizamos el cambio (en modify_atributo.html)
+### 6.2 - Realizamos el cambio (en modify_atributo.html)
 
 Subimos los cambios realizados al hotfix.
 
