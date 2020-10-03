@@ -248,7 +248,7 @@ git push -u origin feature/atributosHTML
 
 Ahora finalizamos la feature
 
-<img src="capturas_practica1/mergesubido atributosHTML a develop.png" alt="mergesubido atributosHTML a develop " with="500" height="auto">
+<img src="capturas_practica1/mergesubido atributosHTML a develop .png" alt="mergesubido atributosHTML a develop " with="500" height="auto">
 
 ### 4.6 Creacion de la release 2.0.0 (con las dos features del usuario 2)
 
@@ -263,7 +263,19 @@ Ahora subimos la release 2.0.0 para que la puedan ver todos los usuarios.
 
 Ahora la finalizamos y la subimos a master.
 
+```
+git checkout master
+```
+
+```
+git flow release finish 2.0.0
+```
+
 <img src="capturas_practica1/finish release 2.0.0.png" alt="finish release 2.0.0" with="500" height="auto">
+
+```
+git push -u origin master
+```
 
 <img src="capturas_practica1/push to master 2.0.0.png" alt="push to master 2.0.0" with="500" height="auto">
 
@@ -282,6 +294,162 @@ git flow init
 ```
 
 <img src="capturas_practica1/inicializar user3.png" alt="ini user3" with="500" height="auto">
+
+### 5.2 - Creación de la feature 4 (estilosCSS) (user3).
+
+```
+git flow feature start estilosCSS
+```
+
+<img src="capturas_practica1/crear feature estiloscss user3.png" alt="crear feature estiloscss user3" with="500" height="auto">
+
+Y realizamos el html de estilosCSS y ponemos los links en los otros archivos.
+
+<img src="capturas_practica1/feature implementada ejemplo user3.png" alt="feature implementada ejemplo user3" with="200" height="auto">
+
+Subimos la feature
+
+```
+git add .
+```
+
+```
+git commit -m"Subimos la feature estilosCSS"
+```
+
+```
+git push -u origin feature/estilosCSS
+```
+
+<img src="capturas_practica1/creados documentos y subida feature.png" alt="creados documentos y subida feature" with="500" height="auto">
+
+### 5.3 - Finalizamos feature estilosCSS
+
+```
+git checkout develop
+```
+
+```
+git flow feature finish estilosCSS
+```
+
+```
+git push -u origin develop
+```
+<img src="capturas_practica1/finish feature estiloscss and merge and push to develop.png" alt="finish feature estiloscss and merge and push to develop" with="500" height="auto">
+
+### 5.4 - Creacion release 3.0.0 (con la feature del user 3)
+
+```
+git flow release start 3.0.0
+```
+<img src="capturas_practica1/start release 300.png" alt="start release 300" with="500" height="auto">
+
+```
+git push -u origin release/3.0.0
+```
+<img src="capturas_practica1/push de la release300.png" alt="push de la release300" with="500" height="auto">
+
+Ahora la finalizamos y la subimos a master
+
+```
+git flow release finish 3.0.0
+```
+
+```
+git checkout master
+```
+
+```
+git push -u origin master
+```
+
+<img src="capturas_practica1/finish release 300 and push to master.png" alt="finish release 300 and push to master" with="500" height="auto">
+
+Y la subimos tambien a develop para que actualize
+
+```
+git checkout develop
+```
+
+```
+git push -u origin develop
+```
+
+<img src="capturas_practica1/push develop to update it.png" alt="push develop to update it" with="500" height="auto">
+
+## 6 - HotFix mejora v3.0.1 (usuario 1)
+
+Primero tenemos que hacer un PULL en la carpeta del usuario 1 para actualizar el repo local.
+
+<img src="capturas_practica1/pull user1 master and develop.png" alt="pull user1 master and develop" with="500" height="auto">
+
+### 6.1 - Creamos el hotfix
+
+```
+git checkout master
+```
+
+```
+git flow hotfix start mejoraV3.0.1
+```
+<img src="capturas_practica1/Creado hotfix.png" alt="Creado hotfix" with="500" height="auto">
+
+### 6.2 Realizamos el cambio (en modify_atributo.html)
+
+Subimos los cambios realizados al hotfix.
+
+```
+git push -u origin hotfix/mejoraV3.0.1
+```
+
+<img src="capturas_practica1/modificao archivo usuario1 y subido al hotfix.png" alt="modificao archivo usuario1 y subido al hotfix" with="500" height="auto">
+
+### 6.3 - Finalizamos el hotfix y lo publicamos.
+
+```
+git checkout master
+```
+
+```
+git flow hotfix finish mejoraV3.0.1
+```
+
+<img src="capturas_practica1/finisht hotfix 301.png" alt="finisht hotfix 301" with="500" height="auto">
+
+```
+git push -u origin develop
+```
+
+```
+git checkout master
+```
+
+```
+git push -u origin master
+```
+
+<img src="capturas_practica1/push to master and develop.png" alt="push to master and develop" with="500" height="auto">
+
+## 7 - GitHub Page
+
+https://vicnx.github.io/practica_desplegament/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
